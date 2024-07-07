@@ -1,0 +1,59 @@
+{
+  "name": "@renderui/utils",
+  "version": "0.1.9",
+  "private": false,
+  "description": "Utility functions for @renderui/core",
+  "license": "MIT",
+  "author": "Lovro Žagar",
+  "type": "module",
+  "exports": {
+    "./capitalize": "./dist/capitalize.js",
+    "./chain": "./dist/chain.js",
+    "./cn": "./dist/cn.js",
+    "./cx": "./dist/cx.js",
+    "./cva": "./dist/cva.js",
+    "./function-call-or-value": "./dist/function-call-or-value.js",
+    "./get-nested-children-text-content": "./dist/get-nested-children-text-content.js",
+    "./get-animation-style-variables": "./dist/get-animation-style-variables.js",
+    "./get-optional-object": "./dist/get-optional-object.js",
+    "./initialize-context": "./dist/initialize-context.js",
+    "./is-function": "./dist/is-function.js",
+    "./merge-props": "./dist/merge-props.js",
+    "./noop": "./dist/noop.js",
+    "./polymorphic": "./dist/polymorphic.js",
+    ".": {
+      "import": {
+        "types": "./dist/index.d.ts",
+        "default": "./dist/index.js"
+      }
+    }
+  },
+  "main": "./dist/index.js",
+  "module": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "bunchee -m"
+  },
+  "dependencies": {
+    "@radix-ui/react-slot": "^1.1.0",
+    "class-variance-authority": "^0.7.0",
+    "tailwind-merge": "^2.3.0"
+  },
+  "devDependencies": {
+    "@types/react": "^18.0",
+    "bunchee": "^4.4.8",
+    "react": "^18.0",
+    "react-dom": "^18.0",
+    "typescript": "^5.4.2"
+  },
+  "peerDependencies": {
+    "react": "^18.0",
+    "react-dom": "^18.0"
+  },
+  "publishConfig": {
+    "access": "public"
+  }
+}
