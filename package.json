@@ -1,26 +1,12 @@
 {
 	"name": "@renderui/utils",
-	"version": "0.2.1",
+	"version": "0.2.2",
 	"private": false,
 	"description": "Utility functions for @renderui/core",
 	"license": "MIT",
 	"author": "Lovro Žagar",
 	"type": "module",
 	"exports": {
-		"./capitalize": "./dist/capitalize.js",
-		"./chain": "./dist/chain.js",
-		"./cn": "./dist/cn.js",
-		"./cx": "./dist/cx.js",
-		"./cva": "./dist/cva.js",
-		"./function-call-or-value": "./dist/function-call-or-value.js",
-		"./get-nested-children-text-content": "./dist/get-nested-children-text-content.js",
-		"./get-animation-style-variables": "./dist/get-animation-style-variables.js",
-		"./get-optional-object": "./dist/get-optional-object.js",
-		"./initialize-context": "./dist/initialize-context.js",
-		"./is-function": "./dist/is-function.js",
-		"./merge-props": "./dist/merge-props.js",
-		"./noop": "./dist/noop.js",
-		"./polymorphic": "./dist/polymorphic.js",
 		".": {
 			"import": {
 				"types": "./dist/index.d.ts",
@@ -44,22 +30,16 @@
 		"lint:fix": "npx @biomejs/biome lint --write ./src"
 	},
 	"dependencies": {
-		"@types/react": "npx:types-react@rc",
-		"@types/react-dom": "npx:types-react-dom@rc",
 		"@radix-ui/react-slot": "^1.1.0",
 		"class-variance-authority": "^0.7.0",
 		"tailwind-merge": "^2.3.0"
-	},
-	"overrides": {
-		"@types/react": "npx:types-react@rc",
-		"@types/react-dom": "npx:types-react-dom@rc"
 	},
 	"devDependencies": {
 		"@biomejs/biome": "^1.8.3",
 		"@biomejs/monorepo": "biomejs/biome",
 		"bunchee": "^5.3.2",
-		"react": "^19.0.0-rc-fb9a90fa48-20240614",
-		"react-dom": "^19.0.0-rc-fb9a90fa48-20240614",
+		"react": "19.0.0-rc-a960b92c-20240819",
+		"react-dom": "19.0.0-rc-a960b92c-20240819",
 		"types-react": "^19.0.0-rc.1",
 		"types-react-dom": "^19.0.0-rc.1",
 		"typescript": "^5.5.4",
@@ -67,8 +47,10 @@
 		"lefthook": "^1.7.12"
 	},
 	"peerDependencies": {
-		"react": "^19.0.0-rc-fb9a90fa48-20240614",
-		"react-dom": "^19.0.0-rc-fb9a90fa48-20240614"
+		"react": "19.0.0-rc-a960b92c-20240819",
+		"react-dom": "19.0.0-rc-a960b92c-20240819",
+		"types-react": "^19.0.0-rc.1",
+		"types-react-dom": "^19.0.0-rc.1"
 	},
 	"publishConfig": {
 		"access": "public"
