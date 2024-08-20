@@ -1,6 +1,6 @@
 {
 	"name": "@renderui/utils",
-	"version": "0.1.9",
+	"version": "0.2.1",
 	"private": false,
 	"description": "Utility functions for @renderui/core",
 	"license": "MIT",
